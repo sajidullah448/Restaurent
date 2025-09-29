@@ -19,4 +19,5 @@ db.on('disconnected',()=>{
     console.log('mongodb disconnected');
 });
 
+//export db file
 module.exports=db
