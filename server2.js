@@ -74,7 +74,7 @@ app.use('/menusearch',newrouter);
 const newempalyees=require('./modules/router/emplayeerouter');
 app.use('/emplayee',newempalyees)
 
-
+//Run on port 4000
 app.listen(4000, () => {
     console.log('server run successfully on port 4000');
 });
