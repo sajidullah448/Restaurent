@@ -8,6 +8,8 @@ app.use(body_parser.json());
 // DB connection
 const db = require('./db2');
 
+require('dotenv').config();
+
 // Import model
 const restaurentmenu = require('./modules/breatmenu');
 
@@ -75,6 +77,7 @@ const newempalyees=require('./modules/router/emplayeerouter');
 app.use('/emplayee',newempalyees)
 
 //Run on port 4000
-app.listen(4000, () => {
+const PORT=process.env.PORT ||4000
+app.listen(PORT, () => {
     console.log('server run successfully on port 4000');
 });

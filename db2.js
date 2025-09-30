@@ -1,5 +1,17 @@
 const mongoose=require('mongoose');
-const url='mongodb://localhost:27017/restaurent'
+
+// const url='mongodb://localhost:27017/restaurent'
+
+// const url = "mongodb+srv://sajidullahkpk1212:fYCgKSjQFBK7Qs0b@cluster0.douc347.mongodb.net/restaurent";
+
+require('dotenv').config();
+
+const url = process.env.MONGODB_URL;
+
+// const url=process.env.MONGODB_LOCAL_UR
+
+
+// Use underscore instead of dash
 
 mongoose.connect(url,{
     
